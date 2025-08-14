@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html lang="en">
+    <header>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>hospital patient Registration</title>
+        <link rel="stylesheet" href="styles.css">
+        <header>
+         <h1>Hospital Patient Registration</h1>
+        </head>
+    <body>
+        
+            
+        <nav>
+            <ul>
+                <li><a href="#current-patient">Current Patient</a></li>
+                <li><a href="#hospital-imaget"></a>Hospital Image</li>
+                <li><a href="#new patient">New Patient Registration</a></li>
+            </ul>
+        </nav>
+    
+    <h2>current patient</h2>
+    <table>
+        <thead>
+            <tr>
+                <th>Patient id</th>
+                <th>name</th>
+                <th>age</th>
+                <th>gender</th>
+                <th>department</th>
+                <th>diagnosis</th>
+                <th>treatment</th>
+                <th>doctor assigned</th>
+                <th>room number</th>
+                <th>admission date</th>
+                <th>discharge date</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td>1</td>
+                <td>John kim</td>
+                <td>30</td>
+                <td>M</td>
+                <td>Cardiology</td>
+                <td>Hypertension</td>
+                <td>Dr. A. Patel</td>
+                <td>2025-08-01</td>
+                <td>2025-08-07</td>
+                <td>101</td>
+                <td>2025-08-01</td>
+            </tr>
+            <tr>  
+                  <td>P002</td>
+                  <td>Mary Wanjiku</td>
+                  <td>32</td>
+                  <td>F</td>
+                  <td>Pediatrics</td>
+                  <td>Asthma</td>
+                  <td>Dr. L. Kimani</td>
+                  <td>2025-08-05</td>
+                  <td>2025-08-10</td> 
+                    <td>102</td>
+                    
+            </tr> 
+            <td>P004</td>
+          <td>Aisha Khan</td>
+          <td>29</td>
+          <td>F</td>
+          <td>Maternity</td>
+          <td>Normal Delivery</td>
+          <td>Dr. R. Mwangi</td>
+          <td>2025-08-06</td>
+          <td>2025-08-09</td>
+            <td>104</td>
+            
+        </tr>
+        <tr>
+          <td>P005</td>
+          <td>Peter Njoroge</td>
+          <td>54</td>
+          <td>M</td>
+          <td>Oncology</td>
+          <td>Lung Cancer</td>
+          <td>Dr. S. Thiongo</td>
+          <td>2025-08-02</td>
+            <td>2025-08-15</td>
+            <td>103</td>
+          <td>-</td>
+        </tr>
+      </tbody>
+    </table>
+  </section>
+  <h2>Hospital Image</h2>
+  <img src="hospital image.jpg" alt="Hospital Image" style="width:100%; height:auto;">
+  <img src="pexels-mart-production-7089047.jpg" alt="Hospital Image" style="width:100%; height:auto">
+</section>
+<h1>instructions</h1>
+        <p>Please Fill Out The Form Below To Register A New Patient.</p>
+        <form action="submit_form.php" method="POST">
+<h2>New Patient Registration <h2>
+    <form action ="#"method="post">
+        <label for="patient_id">Patient ID:</label>
+        <input type="text" id="patient_id" name="patient_id" required>
+
+        <label for="name">Name:</label>
+        <input type="text" id="name" name="name" required>
+        <br><br>
+        <label for="department">Department:</label>
+        <input type="text" id="department" name="department" required>
+        <br><br>
+        <label for="age">Age:</label>
+        <input type="number" id="age" name="age" required>
+        <br><br>
+        <label for="diagnosis">Diagnosis:</label>
+        <input type="text" id="diagnosis" name="diagnosis" required>
+        <br><br>
+        <label for="treatment">Treatment:</label>
+        <input type="text" id="treatment" name="treatment" required>
+        <br><br>
+
+        <label for="gender">gender</label>
+        <select id="gender" name="gender" required>
+            <option value="">select gender--</option>
+                <option value="M">Male</option>
+                <option value="F">Female</option>
+                <option value="O">Other</option>
+                <option value="N">Not specified</option>
+                <br><br>
+        </select>
+
+        <br><br>
+        <fieldset>
+            <legend>Address:</legend>
+            <textarea id="address" name="address" rows="4" required></textarea>
+        </fieldset>
+        <button type="submit">Register Patient</button>
+    </form>
